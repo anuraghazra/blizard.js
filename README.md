@@ -4,16 +4,45 @@
 [website tutorial (i just converted the readme to HTML so all credit to Ethan Priest AKA allyouaskfor)](http://blizardjs.ueuo.com/)
 ## Getting Started
 
+
 Include the `blizard.js` file in your document the way which you prefer. Something like:  
 
-`<script src="http://blizardjs.ueuo.com/blizard.js"></script>`  
+<!-- change the link here -->
+`<script src="https://blizardjs.ueuo.com/blizard.min.js"></script>`  
 
 or if you choose to host it yourself:  
 
-`<script src="js/blizard.js"></script>`  
+`<script src="js/blizard.min.js"></script>`
+
 > Remember to replace the location with the location where it resides on your machine/server.
 
+------
+## Local Development
+
+Install all the dependencies -
+
+```bash
+npm install
+```
+
+**Build the production javascript**
+```bash
+npm run build
+```
+
+**Webpack watch files**
+```bash
+npm run watch
+```
+
+**Generate docs**
+```bash
+npm run jsdoc
+```
+
 ### Usage
+
+Checkout the [docs]() folder
 
 ***sl.print(@elementId-toChange, @newString);***  
 
@@ -112,5 +141,9 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 ## Acknowledgments
 
 * **Ethan Priest** - [allyouaskfor](https://github.com/allyouaskfor/) - Created a proper [README](https://github.com/Slitherlizard/blizard.js/blob/master/README.md)
-=======
+
+------
+
 the brand new javascript library.
+
+Made with :heart:

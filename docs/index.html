@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>JSDoc: Home</title>
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="./build/entry.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Muli:100,400,700|Oswald:300|Inconsolata,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+</head>
+
+<body>
+    <div id="stickyNavbarOverlay"></div>
+    <div class="top-navbar">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    
+                    
+                        <h1 class="navbar-item">Documentation</h1>
+                    
+                    <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-3" id="sidebarNav">
+                <div class="sidebar">
+                    <nav>
+                        <h2><a href="index.html">Home</a></h2><div class="category"><h3>Global</h3><ul><li><a href="global.html#atomo">atomo</a></li><li><a href="global.html#changeBackgroundColor">changeBackgroundColor</a></li><li><a href="global.html#click">click</a></li><li><a href="global.html#col">col</a></li><li><a href="global.html#createElement">createElement</a></li><li><a href="global.html#family">family</a></li><li><a href="global.html#hide">hide</a></li><li><a href="global.html#id">id</a></li><li><a href="global.html#import">import</a></li><li><a href="global.html#print">print</a></li><li><a href="global.html#printlocalstorage">printlocalstorage</a></li><li><a href="global.html#ready">ready</a></li><li><a href="global.html#setlocalstorage">setlocalstorage</a></li><li><a href="global.html#show">show</a></li><li><a href="global.html#size">size</a></li><li><a href="global.html#sl">sl</a></li><li><a href="global.html#wait">wait</a></li></ul></div>
+                    </nav>
+                </div>
+            </div>
+            <div class="column is-9-desktop">
+                <div class="content" id="main-content-wrapper">
+                    <header class="page-title">
+                        <p>Title</p>
+                        <h1>Home</h1>
+                    </header>
+                    
+                    
+
+
+
+    
+
+
+    <h3> </h3>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section>
+        <article><h1>blizard.js</h1>
+<blockquote>
+<p><strong>This library is still in the development stage. It is incomplete but, you are welcome to contribute.</strong><br>
+<a href="http://blizardjs.ueuo.com/">website tutorial (i just converted the readme to HTML so all credit to Ethan Priest AKA allyouaskfor)</a></p>
+</blockquote>
+<h2>Getting Started</h2>
+<p>Include the <code>blizard.js</code> file in your document the way which you prefer. Something like:</p>
+<!-- change the link here -->
+<p><code>&lt;script src=&quot;https://blizardjs.ueuo.com/blizard.min.js&quot;&gt;&lt;/script&gt;</code></p>
+<p>or if you choose to host it yourself:</p>
+<p><code>&lt;script src=&quot;js/blizard.min.js&quot;&gt;&lt;/script&gt;</code></p>
+<blockquote>
+<p>Remember to replace the location with the location where it resides on your machine/server.</p>
+</blockquote>
+<h3>Usage</h3>
+<p>Checkout the <a href="">docs</a> folder</p>
+<p><em><strong>sl.print(@elementId-toChange, @newString);</strong></em></p>
+<pre><code>sl.print(‘p’, ‘Hello’);
+</code></pre>
+<br>  
+<p><em><strong>sl.hide(@elementId-toHide);</strong></em></p>
+<pre><code>sl.hide(‘p1’);
+</code></pre>
+<br>  
+<p><em><strong>sl.show(@elementId-toShow);</strong></em></p>
+<pre><code>sl.show(‘p1’);
+</code></pre>
+<br>  
+<p><em><strong>sl.col(@elementId-toChangeColor, @newColor);</strong></em></p>
+<pre><code>sl.col(‘p1’, ‘red’);
+</code></pre>
+<br>  
+<p><em><strong>sl.family(@elementId-toChangeFont, @newFontFamily);</strong></em></p>
+<pre><code>sl.family(‘p1’, ‘Impact, Charcoal, sans-serif’)
+</code></pre>
+<br>  
+<p><em><strong>sl.size(@elementId-toChangeSize, @newSize);</strong></em></p>
+<pre><code>sl.size(‘p1’, ‘medium’);  
+</code></pre>
+<blockquote>
+<p>Options for <strong><em>size</em></strong>:<br>
+<em>xx-small  |  x-small  |  small  |  medium  |  large  |  x-large  |  xx-large  |  smaller  |  larger</em></p>
+</blockquote>
+<br>  
+<p><em><strong>sl.wait(@function, @milliseconds);</strong></em></p>
+<pre><code>sl.wait(‘f1()’, 1000);  
+function f1() {  
+  alert(‘i love blizard.js’);  
+};
+</code></pre>
+<br>  
+<p><em><strong>sl.setlocalstorage(@nameForStorage, @storageValue);</strong></em></p>
+<pre><code>sl.setlocalstorage(‘name’, ‘smith’);
+</code></pre>
+<br>  
+<p><em><strong>sl.printlocalstorage(@element-toShowValue, @storageToShow);</strong></em></p>
+<pre><code>sl.printlocalstorage(‘p1’, ‘name’);
+</code></pre>
+<br>  
+<p><em><strong>sl.click(@element-toMakeClickable, @function-whenClicked);</strong></em></p>
+<pre><code>sl.click(‘p’, ‘click()’);
+function click() {
+  console.log(‘do something in here’);
+};
+</code></pre>
+<br>  
+<p><em><strong>sl.id(@element-toChangeId, @element-newId);</strong></em></p>
+<pre><code>sl.id(‘old-id’, ‘new-id’);
+</code></pre>
+<blockquote>
+<p>Could be used to modify element styles without additional Javascript.</p>
+</blockquote>
+<br>  
+<p><em><strong>sl.createElement(@NEW-ELEMENT, @PARENT, @newElement-id);</strong></em></p>
+<pre><code>sl.createElement(‘P’, ‘HEAD’, ‘id’);
+</code></pre>
+<blockquote>
+<p>Use capitals for parameter 1 and parameter 2.</p>
+</blockquote>
+<h2>Built With</h2>
+<ul>
+<li><a href="http://atomo.ueuo.com/">atomo.css</a> - Simple HTML/CSS library by Rohan Samra-O’Neill</li>
+</ul>
+<h2>Authors</h2>
+<ul>
+<li><strong>Rohan Samra-O’Neill</strong> - <a href="https://github.com/Slitherlizard/">Slitherlizard</a></li>
+</ul>
+<p>See also the list of <a href="https://github.com/Slitherlizard/blizard.js/blob/master/authors.txt">contributors</a> who participated in this project.</p>
+<h2>License</h2>
+<p>This project is licensed under the MIT License - see the <a href="https://github.com/Slitherlizard/blizard.js/blob/master/LICENSE">LICENSE</a> file for details.</p>
+<h2>Acknowledgments</h2>
+<ul>
+<li><strong>Ethan Priest</strong> - <a href="https://github.com/allyouaskfor/">allyouaskfor</a> - Created a proper <a href="https://github.com/Slitherlizard/blizard.js/blob/master/README.md">README</a>
+=======
+the brand new javascript library.</li>
+</ul></article>
+    </section>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Nov 10 2019 18:32:35 GMT+0530 (India Standard Time)</p>
+        <p class="sidebar-created-by">
+            <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+            <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+        </p>
+    </div>
+</footer>
+
+<script src="scripts/app.min.js"></script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
